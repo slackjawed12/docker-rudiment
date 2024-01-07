@@ -18,6 +18,7 @@ process.on("SIGINT", function () {
 
 let i = 1;
 let start = new Date().getTime();
+let j = 1;
 setInterval(() => {
   start = new Date().getTime();
   console.log("Making request number: %d; at %d", i++, start);
