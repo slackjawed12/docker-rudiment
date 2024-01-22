@@ -19,3 +19,6 @@ COPY --from=builder /usr/src/iotd/target/iotd-service-0.1.0.jar .
 EXPOSE 80
 # CMD 인스트럭션과 같은 기능
 ENTRYPOINT [ "java", "-jar", "/app/iotd-service-0.1.0.jar" ]
+
+# 최종 생성되는 이미지에 빌드 도구는 포함되지 않음
+# 도커파일에 정의된 빌드 단계 중 마지막 단계 컨텐츠만 포함됨
