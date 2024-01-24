@@ -8,7 +8,7 @@ FROM diamol/base
 
 ENV IMAGE_API_URL='http://iotd/image' \
     ACCESS_API_URL="http://accesslog/access-log"
-CMD ["web/server"]
+CMD ["/web/server"]
 
 WORKDIR /web
 COPY index.html .
